@@ -1,13 +1,10 @@
 from django.shortcuts import render, redirect
 from .models import Alumnus, Registered, User
 from django.contrib.auth.decorators import login_required
-
 from django.contrib.auth import authenticate, login as auth_login, logout
 from django.contrib import messages
+from django.urls import reverse
 
-
-
-# Create your views here.
 def home(request):
     return render(request, 'home.html')
 
@@ -81,11 +78,6 @@ def register(request):
         )
         Registered.objects.create(
             user = user,
-            # first_name = first_name,
-            # last_name = last_name,
-            # username = username,
-            # password = password,
-            # email = email,
             second_name = second_name,
             dob = dob,
             mobile = mobile,
@@ -99,8 +91,8 @@ def register(request):
     else:
         return render(request, 'register.html', {})
 
-def login(request):
 
+def login(request):
     if request.method == "POST":
         username = request.POST['username']
         password = request.POST['password']
@@ -118,28 +110,4 @@ def login(request):
 
 def logout_user(request):
     logout(request)
-    return redirect(home)
-
-
-
-
-
-
-
-
-# def login(request):
-#     if request.method == 'POST':
-#         user_name = request.POST['username']
-#         pass_word = request.POST['password']
-       
-#         nticasion = authenticate(request, user_name = user_name, password = pass_word )
-
-#         if nticasion is not None:
-#             auth_login(request, nticasion)
-#             messages.success(request, ("Welcome {{ uname }}!"))
-#             return redirect('home')
-#         else:
-#             messages.success(request, ("There was an error! Try again"))
-#             return render(request, 'login.html', {})
-#     else:
-#         return render(request, 'login.html', {})
+    return redirect('home')
