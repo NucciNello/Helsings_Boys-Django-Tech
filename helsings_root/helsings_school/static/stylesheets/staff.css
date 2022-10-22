@@ -1,0 +1,318 @@
+body{
+  /* position: absolute; */
+  background-image: url('../images/back.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: optima, sans-serif;
+  height: auto;
+  color: gold;
+}
+#c2{
+  position: absolute;
+  /* width: fit-content; */
+  height: 45px;
+  background-color: rgb(0, 0, 0);
+  margin-top: 50px;
+  opacity: 0.80;
+  font-size: 20px;
+  margin-left: 820px;
+  
+}
+#c2 .button{
+  background-color: inherit;
+  border: none;
+  color: gold;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  /* float: left; */
+  font-size: 16px;
+  cursor: pointer;
+  height: 45px;
+  width: 13vh;
+  
+}#c2 .button:hover{
+  background-color: rgba(90, 69, 32);
+}
+  #main{
+    position: absolute;
+    margin: auto;
+    background-color: black;
+    opacity: 0.8;
+    background-size: cover;
+    width: 1300px;
+    height: 170vh;
+    top: 120px;
+    right: 400px;
+  }
+  #cont0{
+    position: relative;
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    top: 70px;
+    margin: auto;
+
+  }.staff{
+    /* position: relative; */
+    top: 18px;
+  }
+  .staff p{
+    position: relative;
+    top: 15px;
+    font-size: 25px;
+    text-align: center;
+    color: gold;
+  }
+  .hoo{
+    top: 70px;
+    border: 0.5px solid gold;
+    align-self: center;
+    width: 90%;
+  }#staff h1{
+    position: relative;
+    text-align: center;
+  }
+  .staff1{
+    position: relative;
+    width: 30%;
+    height: auto;
+  }#p1{
+    position: relative;
+    font-size: 13px;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    top: -5px;
+  
+  }.staff1 img{
+    width: 65%;
+    height: 220px;
+    position: relative;
+    background-size: auto;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    opacity: 1;
+  }
+  .staff1 h4{
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+    top: 5px;
+  }
+  .staff2{
+    position: relative;
+    width: 30%;
+    height: auto;
+  }#p2{
+    position: relative;
+    font-size: 13px;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    top: -5px;
+  }.staff2 img{
+    width: 65%;
+    height: 220px;
+    position: relative;
+    background-size: auto;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    opacity: 1;
+  }.staff2 h4{
+    text-align: center;
+    position: relative;
+    font-size: 15px;
+    top: 5px;
+  }
+  .staff3{
+    position: relative;
+    width: 30%;
+    height: auto;
+  }#p3{
+    position: relative;
+    font-size: 13px;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    top: -5px;
+  }.staff3 img{
+    width: 65%;
+    height: 220px;
+    position: relative;
+    background-size: auto;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    opacity: 1;
+  }.staff3 h4{
+    text-align: center;
+    position: relative;
+    font-size: 15px;
+    top: 5px;
+  }
+  #cont1{
+    position: relative;
+    width: 68%;
+    display: flex;
+    justify-content: space-between;
+    top: 130px;
+    margin: auto;
+    background-color: inherit;
+  }
+  .staff4{
+    position: relative;
+    width: 40%;
+    height: auto;
+  }#p4{
+    position: relative;
+    font-size: 13px;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    top: -5px;
+  
+  }.staff4 img{
+    width: 65%;
+    height: 220px;
+    position: relative;
+    background-size: auto;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    opacity: 1;
+  }
+  .staff4 h4{
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+    top: 5px;
+  }
+  .staff5{
+    position: relative;
+    width: 40%;
+    height: auto;
+  }#p5{
+    position: relative;
+    font-size: 13px;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    top: -5px;
+  }.staff5 img{
+    width: 65%;
+    height: 220px;
+    position: relative;
+    background-size: auto;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    opacity: 1;
+  }.staff5 h4{
+    text-align: center;
+    position: relative;
+    font-size: 15px;
+    top: 5px;
+  }
+  #cont2{
+    position: relative;
+    width: 85%;
+    justify-content: space-between;
+    top: 180px;
+    margin: auto;
+    background-color: transparent;
+    height: 700px;
+  }
+  .hone{
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    height: 30px;
+    background-color: inherit;
+    width: 100%;
+  }
+  #tab{
+    background-color: inherit;
+    position: relative;
+    height: 80%;
+    top: -8px;
+  }
+  .members{
+    position: relative;
+    border: 2px solid gold;
+    margin: auto;
+    height: 100%;
+    width: 80%;
+    text-align: center;
+    top: 5px;
+
+  }
+  .members th, td{
+    border: 0.3px solid gold;
+    border-collapse: collapse;
+}
+.members tr:nth-child(1){
+  background-color: rgba(255, 215, 0, 0.15);
+}
+.members tr:nth-child(even){
+  background-color: rgba(108, 105, 105, 0.15);
+}
+.members tr:nth-child(3){
+  background-color: rgba(108, 105, 105, 0.15);
+}
+.members tr:nth-child(5){
+  background-color: rgba(108, 105, 105, 0.15);
+}
+.members tr:nth-child(7){
+  background-color: rgba(108, 105, 105, 0.15);
+}
+.members tr:nth-child(9){
+  background-color: rgba(108, 105, 105, 0.15);
+}
+.final h1{
+  position: relative;
+  margin: auto;
+  text-align: center;
+  font-size: 20px;
+  top: 30px;
+}
+.a1{
+  position: relative;
+  margin: auto;
+  background-color: transparent;
+  top: 90px;
+}
+ .a1 a{
+  font-size: 15x;
+  position: relative;
+  color: gold;
+  text-align: center;
+  left: 47.5%;
+  top: -45px;
+}
+.hoo1{
+  position: relative;
+  margin: auto;
+  background-color: white;
+  top: 50px;
+} 
+.final hr{
+  position: relative;
+  border: 0.5px solid gold;
+  align-self: center;
+  width: 106%;
+  top: 15px;
+  right: 30px;
+}
+  

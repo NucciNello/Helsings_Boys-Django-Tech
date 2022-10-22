@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    {% block proj %}
+<head>
+       <title>Contact Us</title>
+    <link rel="stylesheet" href="{% static '/stylesheets/contact.css' %}">
+</head>
+<body>
+<div id="c2">
+    <button class="button" onclick="parent.location='home'">Home</button>
+    <button class="button" onclick="parent.location='aboutus'">About</button>
+    {% if user.is_authenticated%}
+    <button class="button" onclick="parent.location='alumni'">Alumni</button>
+    <button class="button" onclick="parent.location='logout'"><a 
+        style="text-decoration: None; color: gold; font-size: inherit;
+        font-family: optima, sans-serif;">Logout</a></button>
+    {% else %}
+    <button class="button" onclick="parent.location='login'">Login</button>
+    <button class="button" onclick="parent.location='register'">Register</button>
+    {% endif %}
+    <button class="button" onclick="parent.location='staff'">Staff</button>
+    <button class="button" onclick="parent.location='contact'">Contacts</button>
+    <div id="c1">
+    <div id="cont0"><h1>Contact Us</h1>
+        <hr>
+    </div>
+        &nbsp;
+    <div id="cont1">
+        <img src="{% static '/images/location.png' %}">
+        <a style="text-decoration: none;" href="https://goo.gl/maps/kAcYBKsYUoGNHTwT7">CoICT, Dar es Salaam Tanzania</a>
+    </div>
+    <div id="cont2">
+        <img src="{% static '/images/mail.png' %}">
+        <a style="text-decoration: none;" href="mailto:caljr9301@gmail.com">caljr9301@gmail.com</a>
+    </div>
+    <div id="cont3">
+        <img src="{% static '/images/phone.png' %}">
+        <p>+255 759 027 671</p>
+    </div>
+    <div id="cont4">
+        <a href="https://twitter.com/MandyNuhu"><img src="{% static '/images/twitter.png' %}" width="30px" height="30px"></a>
+        &nbsp;&nbsp;
+        <a href="https://www.instagram.com/iam_nuhu_mandy"><img src="{% static '/images/instagram.png' %}" width="30px" height="30px"></a>
+        &nbsp;&nbsp;
+        <a href="https://github.com/NucciNello"><img src="{% static '/images/github.png' %}" width="30px" height="30px"></a>      
+    </div>
+    <div id="cont5">
+        <a href="home">Home</a>
+    </div>
+    </div>
+</body>
+{% endblock %}
+</html>

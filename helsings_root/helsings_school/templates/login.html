@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  {% block proj %}
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static '/stylesheets/login.css' %}">
+  </head>
+  <body>
+  
+  <div id="c2">
+        <button class="button" onclick="parent.location='home'">Home</button>
+        <button class="button" onclick="parent.location='aboutus'">About</button>
+        {% if user.is_authenticated%}
+        <button class="button" onclick="parent.location='alumni'">Alumni</button>
+        <button class="button" onclick="parent.location='logout'"><a 
+          style="text-decoration: None; color: gold; font-size: inherit;
+          font-family: optima, sans-serif;">Logout</a></button>
+        {% else %}
+        <button class="button" onclick="parent.location='login'">Login</button>
+        <button class="button" onclick="parent.location='register'">Register</button>
+        {% endif %}
+        <button class="button" onclick="parent.location='staff'">Staff</button>
+        <button class="button" onclick="parent.location='contact'">Contacts</button>
+    <div class="app__login">
+      <h1>LOGIN</h1>
+      <form method="POST" class="app__login_form center" action="{% url 'login' %}" >
+         {% csrf_token %}
+        <div class="app__login_input">
+            <div class="container">
+              {% if massages %}
+              {% for message in messages %}
+              <div class="alert alert-{{message.tag}}">{{ message }}</div> 
+              {% endfor %}
+              {% endif %}
+            </div>
+            <input type="text" id="Username" placeholder="Username" name="username" required />
+          </div>
+          <div class="app__login_input2">
+            <input type="password" id="pass" placeholder="Password" name="password" required/>
+          </div>
+  
+          <!-- <button type="submit">Login</button> -->
+          <input type="submit" value="Login" class="app__login_btn" />
+          <p>Not a member? <a href="register">Register</a></p>
+        </form>
+      </div>
+    </body>
+    {% endblock %}
+  </html>

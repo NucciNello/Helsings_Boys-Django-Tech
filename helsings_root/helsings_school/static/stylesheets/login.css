@@ -1,0 +1,107 @@
+body{
+    background-image: url("../images/back.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: optima, sans-serif;
+    color: gold;
+}
+#c2{
+    position: relative;
+    width: fit-content;
+    height: 45px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 2px;
+    opacity: 0.80;
+    font-size: 20px;
+    float: right;
+    
+ }
+ #c2 .button{
+    background-color: inherit;
+    border: none;
+    color: gold;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    /* float: left; */
+    font-size: 16px;
+    cursor: pointer;
+    height: 45px;
+    width: 12vh;
+    
+ }#c2 .button:hover{
+    background-color: rgba(90, 69, 32);
+ }
+ .app__login h1{
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    top: 40px;
+ }
+
+.app__login{
+    position: relative;
+    background-color: black;
+    opacity: 0.8;
+    width: 450px;
+    height: 450px;
+    margin: auto;
+    top: 300px;
+    left: -420px;
+    /* border-radius: 10%; */
+
+}
+.app__login_input{
+    position: relative;
+    height: 40px;
+    width: 100%;
+    background-color: inherit;
+    top: 60px;
+}#Username{
+    position: relative;
+    margin: auto;
+    left: 15%;
+    height: 30px;  
+    background-color: inherit;
+    border: 0px;
+    border-bottom: 1px solid gold;
+    width: 70%;
+    color: gold; 
+}
+.app__login_input2{
+    position: relative;
+    height: 40px;
+    width: 100%;
+    background-color: inherit;
+    top: 85px;
+}
+#pass{
+    position: relative;
+    margin: auto;
+    left: 15%;
+    height: 30px;  
+    background-color: inherit;
+    border: 0px;
+    border-bottom: 1px solid gold;
+    width: 70%;
+    color: gold; 
+}
+.app__login_btn{
+    position: relative;
+    /* border-radius: 1.25em; */
+    height: 30px;
+    width: 20%;
+    background-color: rgb(128, 97, 39);
+    color: black;
+    font-size: 16px;
+    border-color: gray;
+    top: 120px;
+    left: 180px;
+}
+.app__login p{
+    position: relative;
+    color: gold;
+    font-size: 18px;
+    text-align: center;
+    top: 160px;
+ }

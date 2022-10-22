@@ -1,0 +1,238 @@
+body{
+  background-image: url('../images/back.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: gold;
+  font-family: optima, sans-serif;
+  height: 170vh;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+#c2{
+  /* position: absolute; */
+  /* width: fit-content; */
+  height: 45px;
+  background-color: rgb(0, 0, 0);
+  margin-top: -150px;
+  opacity: 0.80;
+  font-size: 20px;
+  margin-left: 820px;
+  
+}
+#c2 .button{
+  background-color: inherit;
+  border: none;
+  color: gold;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  /* float: left; */
+  font-size: 16px;
+  cursor: pointer;
+  height: 45px;
+  width: 13vh;
+  
+}#c2 .button:hover{
+  background-color: rgba(90, 69, 32);
+}
+.maina{
+    background-color: black;
+    opacity: 0.8;
+    width: 65%;
+    margin: auto;
+    height: auto; 
+    top: 700px; 
+}
+.maina h1{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+    top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.maina hr{
+    position: relative;
+    width: 90%;
+    border: 0.5px solid gold;
+    align-self: center;
+    top: 25px;
+}
+.but{
+  position: absolute;
+  top: 110px;
+  left: 610px;
+}.but button{
+    height: 40px;
+    width: 150px;
+    color: gold;
+    background-color: rgb(128, 97, 39);
+    border-color: gray;
+    font-size: 16px;
+    border-radius: 1.25em;
+}
+.cont0{
+    position: relative;
+    width: 70%;
+    margin: auto;
+    background-color: inherit;
+    top: 140px;
+    justify-content: center;
+  
+}
+.p1{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    top: 10px;
+}#alumniBtn{
+    height: 25px;
+    width: 90px;
+    color: gold;
+    background-color: rgb(128, 97, 39);
+    border-color: gray;
+    border-radius: 1.25em;
+}
+#alname{
+    position: relative;
+    text-align: center;
+    margin: auto;
+    left: 30%;
+    top: 40px;
+    background-color: inherit;
+    border: 0px;
+    border-bottom: 0.5px solid gold;
+    height: 30px;
+    width: 40%;
+    color: gold;
+}
+  .p2{
+    position: relative;
+    text-align: center;
+    top: 70px;
+    height: 70px;
+  }
+  .p3{
+    position: relative;
+    text-align: center;
+    top: 80px;
+    height: 70px;
+  }
+  .p4{
+    position: relative;
+    text-align: center;
+    top: 90px;
+    height: 70px;
+  }
+  .p5{
+    position: relative;
+    text-align: center;
+    top: 115px;
+    height: 70px;
+  }
+  .p6{
+    position: relative;
+    text-align: center;
+    top: 130px;
+    height: 70px;
+  }
+  .inpu{
+    position: relative;
+    position: relative;
+    text-align: center;
+    top: 100px;
+    height: 70px;
+  }
+  #enrolYear{
+    position: relative;
+    height: 27px;
+    width: 60px;
+    background-color: rgb(128, 97, 39);
+  }
+  #gradYear{
+        position: relative;
+        height: 27px;
+        width: 60px;
+        background-color: rgb(128, 97, 39);
+      }
+   #headmasters{
+        position: relative;
+        height: 35px;
+        width: 180px;
+        background-color: rgb(128, 97, 39);
+        border-color: gray;
+      }
+    #teachers{
+            position: relative;
+            height: 35px;
+            width: 180px;
+            background-color: rgb(128, 97, 39);
+            border-color: gray;
+    }
+    #results{
+        position: relative;
+        height: 35px;
+        width: 100px;
+        background-color: rgb(128, 97, 39);
+        border-color: gray;
+    }
+    .inpu{
+        position: relative;
+        top: 210px;
+    }
+    #occ{
+        position: relative;
+        height: 35px;
+        width: 180px;
+        background-color: rgba(108, 105, 105, 0.2);
+        border-color: gray;
+        color: gold;
+    }
+    #mail{
+        position: relative;
+        height: 35px;
+        width: 180px;
+        background-color: rgba(108, 105, 105, 0.2);
+        border-color: grey;
+        color: gold;
+    } #add{
+        position: relative;
+        height: 35px;
+        width: 180px;
+        background-color: rgba(108, 105, 105, 0.2);
+        border-color: gray;
+        color: gold;
+    } #num{
+        position: relative;
+        height: 35px;
+        width: 180px;
+        background-color: rgba(108, 105, 105, 0.2);
+        border-color: gray;
+        color: gold;
+    }
+    #sub{
+        height: 35px;
+        width: 90px;
+        color: gold;
+        background-color: rgb(128, 97, 39);
+        border-color: gray;
+        border-radius: 1.25em;
+    }
+    .a1{
+        position: relative;
+        margin: auto;
+        background-color: transparent;
+        top: 500px;
+      }
+       .a1 a{
+        font-size: 15x;
+        position: relative;
+        color: gold;
+        text-align: center;
+        left: 48%;
+        top: -45px;
+      }

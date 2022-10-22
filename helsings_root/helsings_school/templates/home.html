@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+{% block proj %}
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link rel="stylesheet" href="{% static '/stylesheets/homepage.css' %}">
+    </head>
+    <body>
+      <div id="c2">
+        <button class="button" onclick="parent.location='home'">Home</button>
+        <button class="button" onclick="parent.location='aboutus'">About</button>
+        {% if user.is_authenticated%}
+        <button class="button" onclick="parent.location='alumni'">Alumni</button>
+        <button class="button"><a href="{% url 'logout' %}"
+          style="text-decoration: None; color: gold; font-size: inherit;
+          font-family: optima, sans-serif;">Logout</a></button>
+        {% else %}
+        <button class="button" onclick="parent.location='login'">Login</button>
+        <button class="button" onclick="parent.location='register'">Register</button>
+        {% endif %}
+        <button class="button" onclick="parent.location='staff'">Staff</button>
+        <button class="button" onclick="parent.location='contact'">Contacts</button>
+       </div>
+          <div id="c1">
+            <h1><b>HELSING'S BOYS SECONDARY SCHOOL</b></h1>
+            <h2>"Success is not final; failure is not fatal: It is the courage to continue that counts."</h2>
+            <p>At Helsing's Boys Secondary School, we aim to provide the highest standards of education within a caring and stimulating environment.<br>
+              Our students are well behaved and eager to learn. Academic success is at the core of our work and we are committed tostudents achieving<br>
+              the highest levels of progress and success. We welcome you all.</p>
+          </div>
+        <!-- <script>
+          
+        </script> -->
+    </body>
+{% endblock %}
+</html>

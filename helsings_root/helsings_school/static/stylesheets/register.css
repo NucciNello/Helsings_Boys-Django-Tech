@@ -1,0 +1,315 @@
+body{
+    /* position: absolute; */
+    background-image: url('../images/back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: optima, sans-serif;
+    height: auto;
+}
+#c2{
+    position: absolute;
+    /* width: fit-content; */
+    height: 45px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 50px;
+    opacity: 0.80;
+    font-size: 20px;
+    margin-left: 810px;
+    
+ }
+ #c2 .button{
+    background-color: inherit;
+    border: none;
+    color: gold;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    /* float: left; */
+    font-size: 16px;
+    cursor: pointer;
+    height: 45px;
+    width: 13vh;
+    
+ }#c2 .button:hover{
+    background-color: rgba(90, 69, 32);
+ }
+#cont0{
+    position: absolute;
+    height: 165vh;
+    width: 65vh;
+    background-color: black;
+    opacity: 0.80;
+    left: -250px;
+    top: 160px;
+    bottom: 50px;
+}#cont1{
+    position: relative;
+    height: 30px;
+    font-size: 9px;
+    text-align: center;
+    top: 10px;
+}#cont1 hr{
+    border: 0.5px solid gold;
+    width: 90%;
+
+}#contn{
+    position: relative;
+    height: 30px;
+    top: 540px;
+    background-color: inherit;
+}#contn hr{
+    width: 90%;
+    border: 0.5px solid gold;
+}
+#cont2{
+    position: relative;
+    display: inline;
+    top: 40px;
+    left: 40px;
+    color: gold;
+}#nam1{
+    background-color: inherit;
+    border: 0px;
+    border-bottom: 0.5px solid gold;
+    height: 30px;
+    width: 60%;
+    left: 42px;
+    position: relative;
+    color: gold;
+}#nam2{
+    background-color: inherit;
+    border: 0px;
+    border-bottom: 0.5px solid gold;
+    height: 30px;
+    width: 60%;
+    top: 10px;
+    left: 117px;
+    position: relative;
+    color: gold;
+}#nam3{
+    background-color: inherit;
+    border: 0px;
+    border-bottom: 0.5px solid gold;
+    height: 30px;
+    width: 60%;
+    top: 20px;
+    left: 117px;
+    position: relative;
+    color: gold;
+}#nam4{
+    background-color: inherit;
+    border: 0px;
+    border-bottom: 0.5px solid gold;
+    height: 30px;
+    width: 60%;
+    top: 30px;
+    left: 117px;
+    position: relative;
+    color: gold;
+}#cont3{
+    position: relative;
+    top: 100px;
+    color: gold;
+    left: 40px;
+}#DOB{
+    background-color: rgb(128, 97, 39);
+    left: 20%;
+    color: black;
+    opacity: 1;
+    width: 60%;
+    height: 32px;
+}#cont4{
+    position: relative;
+    height: 30px;
+    display: inline;
+    color: gold;
+    left: 40px;
+    top: 135px;
+}#cont4 p{
+    /* text-align: center; */
+    position: relative;
+    font-size: 25px;
+    left: 180px;
+}
+#mail{
+    position: relative;
+    left: 50px;
+    width: 60%;
+    height: 32px;
+    color: gold;
+    background-color: inherit;
+    border: 0;
+    border-bottom: 0.5px solid gold;
+}#cont5{
+    position: relative;
+    display: flex;
+    top: 180px;
+    height: 30px;
+    left: 40px;
+}#codes{
+    position: relative;
+    left: 48px;
+    width: 70px;
+    bottom: 5px;
+    border: 0;
+    border-bottom: 0.5px solid gold;
+    background-color: inherit;
+    color: grey;
+}#no{
+    position: relative;
+    left: 48px
+    ;
+    width: 320px;
+    bottom: 5px;
+    border: 0;
+    border-bottom: 0.5px solid gold;
+    background-color: inherit;
+    color: gold;
+}#cont6{
+    position: relative;
+    top: 220px;
+    /* left: 35px; */
+    text-align: center;
+    display: inline;
+}#cont6 p{
+    position: relative;
+    left: 9px;
+}
+#fb{
+    background-color: inherit;
+    border: 0px;
+    border-bottom: 0.5px solid gold;
+    height: 30px;
+    width: 60%;
+    left: 147px;
+    position: relative;
+    color: gold;
+}#twitter{
+    background-color: inherit;
+    border: 0px;
+    border-bottom: 0.5px solid gold;
+    height: 30px;
+    width: 60%;
+    top: 20px;
+    left: 147px;
+    position: relative;
+    color: gold;
+}#ig{
+    background-color: inherit;
+    border: 0px;
+    border-bottom: 0.5px solid gold;
+    height: 30px;
+    width: 60%;
+    top: 40px;
+    left: 147px;
+    position: relative;
+    color: gold;
+}#cont7{
+    position: relative;
+    top: 320px;
+    /* left: 35px; */
+    text-align: center;
+    display: inline;
+}#cont7 p{
+    position: relative;
+    left: 5px;
+    font-size: 25px;
+}
+#cont7 li{ 
+    font-size: 13px;
+    position: relative;
+    top: 15px;
+    bottom: 12px;
+    opacity: 0.5;
+    left: 18px;
+}
+.sp{
+    position: relative;
+    left: 147px;
+    top: 10px;
+    font-size: 13px;
+    opacity: 0.5;
+    bottom: 10px;
+}
+#pw{
+    position: relative;
+    height: 32px;
+    width: 60%;
+    background-color: inherit;
+    border: 0.5;
+    border-bottom: 0.5px solid gold;
+    left: 147px;
+    color: gold;
+}#cp{
+    position: relative;
+    height: 32px;
+    width: 60%;
+    background-color: inherit;
+    border: 0.5;
+    border-bottom: 0.5px solid gold;
+    left: 147px;
+    color: gold;
+    top: 32px;
+}#sub{
+    position: relative;
+    height: 35px;
+    width: 17%;
+    background-color: rgb(128, 97, 39);
+    left: 270px;
+    color: black;
+    top: 48px;
+    border-color: gray;
+}#cont8{
+    position: relative;
+    top: 415px;
+    /* left: 35px; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    display: flex;
+}#cont8 p{
+    /* position: relative; */
+   
+    /* left: 298px; */
+    font-size: 22px;
+}#vc{
+    position: relative;
+    top: 10px;
+    left: 285px;
+    background-color: inherit;
+}#cont9{
+    position: relative;
+    display: flex;
+    top: 520px;
+    height: 90px;
+    background-color: inherit;
+
+}#sub2{
+    position: relative;
+    border-radius: 1.25em;
+    height: 44px;
+    width: 20%;
+    left: 263px;
+    background-color: rgb(128, 97, 39);
+    color: black;
+    font-size: 16px;
+    border-color: gray;
+}#cont10{
+    position: relative;
+    height: 40px;
+    top: 490px;
+    background-color: inherit;
+}#cont10 a{
+    font-size: 15x;
+    position: relative;
+    color: gold;
+    left: 46.6%;
+    font-family: optima, sans-serif;
+}

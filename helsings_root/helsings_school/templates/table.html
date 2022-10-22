@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Table</title>
+    <link rel="stylesheet" href="{% static '/stylesheets/table.css' %}">
+    </head>
+    <body>
+
+    <div id="c2">
+      <button class="button" onclick="parent.location='home'">Home</button>
+      <button class="button" onclick="parent.location='aboutus'">About</button>
+      {% if user.is_authenticated%}
+      <button class="button" onclick="parent.location='alumni'">Alumni</button>
+      <button class="button" onclick="parent.location='logout'"><a 
+        style="text-decoration: None; color: gold; font-size: inherit;
+        font-family: optima, sans-serif;">Logout</a></button>
+      {% else %}
+      <button class="button" onclick="parent.location='login'">Login</button>
+      <button class="button" onclick="parent.location='register'">Register</button>
+      {% endif %}
+      <button class="button" onclick="parent.location='staff'">Staff</button>
+      <button class="button" onclick="parent.location='contact'">Contacts</button>
+
+      <div class="alumni">
+      <p>Our Alumni List</p>
+      <hr>
+      <table class="last">
+        <tr>
+          <th>Alumnus Name</th>
+          <th>Year of Enrollemnt</th>
+          <th>Year of Graduation</th>
+          <th>Headmaster</th>
+          <th>Famous Teacher</th>
+          <th>Results</th>
+          <th>Occupation</th>
+          <th>Address</th>
+          <th>Email</th>
+          <th>Mobile Number</th> 
+        </tr>
+        <hr id="hl">
+        
+
+        {% for veterans in all %}
+          <tr>
+            <td>{{veterans.name}}</td>
+            <td>{{veterans.enrolled}}</td>
+            <td>{{veterans.graduated}}</td>
+            <td>{{veterans.headmaster}}</td>
+            <td>{{veterans.famous}}</td>
+            <td>{{veterans.results}}</td>
+            <td>{{veterans.occupation}}</td>
+            <td>{{veterans.address}}</td>
+            <td>{{veterans.email}}</td>
+            <td>{{veterans.mobile}}</td>
+          </tr>
+          {% endfor %}
+
+    </div>
+</body>
+</html>

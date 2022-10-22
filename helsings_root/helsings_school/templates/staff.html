@@ -1,0 +1,130 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <!-- {% block proj %} -->
+<head>
+    <title>Staff</title>
+    <link rel="stylesheet" href="{% static '/stylesheets/staff.css' %}" />
+</head>
+<body>
+
+<div id="c2">
+  <button class="button" onclick="parent.location='home'">Home</button>
+  <button class="button" onclick="parent.location='aboutus'">About</button>
+  {% if user.is_authenticated%}
+  <button class="button" onclick="parent.location='alumni'">Alumni</button>
+  <button class="button" onclick="parent.location='logout'"><a 
+  style="text-decoration: None; color: gold; font-size: inherit;
+  font-family: optima, sans-serif;">Logout</a></button>
+  {% else %}
+  <button class="button" onclick="parent.location='login'">Login</button>
+  <button class="button" onclick="parent.location='register'">Register</button>
+  {% endif %}
+  <button class="button" onclick="parent.location='staff'">Staff</button>
+  <button class="button" onclick="parent.location='contact'">Contacts</button>
+</div>
+  <div id="main">
+    <div class="staff">
+      <p>Staff</p>
+    </div>
+      <hr class="hoo">
+      <div id="cont0">
+         <div class="staff1">
+           <img src="{% static '/images/st01.jpg' %}" alt="director">
+           <h4>Dr. Nuhu Mandy</h4>
+           <p id="p1">Director of the school. Doctarate in
+           <br>Human Psychology and Assets 
+           <br>Management. Owner the school.
+           </p>
+         </div>
+         <div class="staff2">
+           <img src="{% static '/images/st2.JPG' %}" alt="Headmaster">
+           <h4>Mr. Ruben Mchicha</h4>
+           <p id="p2">Headmaster of the school. Doctarate in
+            <br>Physics. Head of the teachers. Head of
+            <br>school managerial committee.
+            <br>Physics Teacher.
+          </p>
+         </div>
+         <div class="staff3">
+           <img src="{% static '/images/st3.JPG' %}" alt="Second master">
+           <h4>Mr. Shabani</h4>
+           <p id="p3">Second master. Masters in Artistical Science. Head of academic commitee and parents committee.
+            <br>Civics and History Teacher.
+           </p>
+         </div>
+      </div>
+      <div id="cont1">
+         <div class="staff4">
+           <img src="{% static '/images/st4.JPG' %}" alt="Academic">
+           <h4>Ms. Bethsebba</h4>
+           <p id="p4">Academic mistress. Bsc in Psychology
+            <br>Science. Head of discipline commitee
+            <br>and advisor of Student's government.
+            <br>Biology Teacher.
+          </p>
+         </div>
+         <div class="staff5">
+           <img src="{% static '/images/st5.JPG' %}" alt="Discipline">
+           <h4>Mr. Hafilibafi</h4>
+           <p id="p5">Discipline master. Masters in Artistical
+            <br>Science. Head of academic commitee
+            <br>and parents committee.
+            <br>Kiswahili and English Teacher.
+          </p>
+        </div>
+        </div>
+        <div id="cont2">
+          <h1 class="hone">Other staff members</h1>
+          <div id="tab">
+          <table class="members">
+            <tr>
+              <th>Work</th>
+              <th>Number</th>
+            </tr>
+            <tr>
+              <th>Language</th>
+              <th>20</th>
+            </tr>
+            <tr>
+              <th>Mathematics</th>
+              <th>5</th>
+            </tr>
+            <tr>
+              <th>General Studies</th>
+              <th>20</th>
+            </tr>
+            <tr>
+              <th>physics</th>
+              <th>7</th>
+            </tr>
+            <tr>
+              <th>Chemistry</th>
+              <th>5</th>
+            </tr>
+            <tr>
+              <th>Biology</th>
+              <th>10</th>
+            </tr>
+            <tr>
+              <th>Sports</th>
+              <th>10</th>
+            </tr>
+            <tr>
+              <th>Non-Teaching Staff</th>
+              <th>30</th>
+            </tr>
+          </table>
+        </div>
+        <div class="final">
+          <h1>Total Staff = 112</h1>
+        <div class="a1">
+          <a href="home">Home</a>
+          <hr>
+        </div>
+        </div>
+      </diV>
+  </div>
+</body>
+<!-- {% endblock %} -->
+</html>

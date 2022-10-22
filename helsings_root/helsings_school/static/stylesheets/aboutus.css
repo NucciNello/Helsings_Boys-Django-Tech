@@ -1,0 +1,284 @@
+body{
+    /* position: absolute; */
+    background-image: url('../images/back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: optima, sans-serif;
+    height: auto;
+}
+#c2{
+    position: absolute;
+    /* width: fit-content; */
+    height: 45px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 50px;
+    opacity: 0.80;
+    font-size: 20px;
+    margin-left: 820px;
+    
+ }
+ #c2 .button{
+    background-color: inherit;
+    border: none;
+    color: gold;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    /* float: left; */
+    font-size: 16px;
+    cursor: pointer;
+    height: 45px;
+    width: 13vh;
+    
+ }#c2 .button:hover{
+    background-color: rgba(90, 69, 32);
+ }
+.cont{
+    position: fixed;
+    height: 650px;
+    width: 1000px;
+    top: 200px;
+    /* right: 550px; */
+    /* left: 300px; */
+    /* background-color: blue; */
+}.ab1{
+    position: relative;
+    background-color: black;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+}.ab1 p{
+    font-size: 20px;
+    text-align: center;
+    color: blueviolet;
+}.bottons{
+    position: relative;
+    height: 40px;
+    width: 100%;
+    background-color: inherit;
+    top: 15px;
+    transition: 0.2s all;
+    
+}
+.bottons button:hover{
+    background-color: rgb(128, 97, 39);
+    color: gold;
+    cursor: pointer;
+}
+.bottons button:active{
+    background-color: rgba(108, 105, 105, 0.15);
+    color: gold;
+    transform: scale(0.95);
+}
+.left{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    top: 5px;
+    left: 458px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 0.5px solid gold;
+    color: gold;
+}
+.right{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    top: 5px;
+    left: 460px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 0.5px solid gold;
+    color: gold;
+
+}
+#home{
+    position: relative;
+    /* left: 47%; */
+    top: 25px;
+}#home a{
+    position: relative;
+    color: gold;
+    left: 47%;
+}
+.app__about_description{
+    position: relative;
+}
+.app__about_description h1{
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    color: gold;
+    top: 10px;
+}.app__about_description hr{
+    position: relative;
+    width: 90%;
+    border: 0.5px solid gold;
+}#a{
+    position: relative;
+    color: gold;
+    text-align: center;
+    font-size: 18px;
+    top: 15px;
+    word-spacing: 1.8px;
+}#b{
+    position: relative;
+    color: gold;
+    text-align: center;
+    font-size: 18px;
+    top: 15px;
+    word-spacing: 1.8px;
+}#b a{
+    position: relative;
+    color: gold;
+    text-align: center;
+    font-size: 18px;
+}#c{
+    position: relative;
+    color: gold;
+    text-align: center;
+    font-size: 18px;
+    top: 15px;
+    word-spacing: 1.8px;
+}
+#imgcont{
+    position: relative;
+    display: flex;
+    background-color: inherit;
+    height: 180px;
+    top: 25px;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+#img1{
+    position: relative;
+    height: 100%;
+    width: 32%;
+   
+}
+#img1 img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background-size: contain;
+}#im1{
+    position: relative;
+    color: gold;
+    text-align: center;
+    font-size: 15px;
+    /* top: 15px; */
+    word-spacing: 1.8px;
+    opacity: 1;
+
+}
+#and{
+    position: relative;
+    color: gold;
+    text-align: center;
+    font-size: 18px;
+    top: 80px;
+    word-spacing: 1.8px;
+}
+.vision{
+    position: relative;
+    top: 150px;
+}.vision h1{
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    color: gold;
+    top: 10px;
+}.vision hr{
+    position: relative;
+    width: 90%;
+    border: 0.5px solid gold;
+}#d{
+    position: relative;
+    color: gold;
+    text-align: center;
+    font-size: 18px;
+    top: 15px;
+    word-spacing: 1.8px;
+}#d1{
+    position: relative;
+    color: gold;
+    text-align: center;
+    font-size: 18px;
+    top: 15px;
+    word-spacing: 1.8px;
+}#d2{
+    position: relative;
+    color: gold;
+    text-align: center;
+    font-size: 18px;
+    top: 15px;
+    word-spacing: 1.8px;
+}
+.mission{
+    position: relative;
+}
+.mission h1{
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    color: gold;
+    top: 10px;
+}.mission hr{
+    position: relative;
+    width: 90%;
+    border: 0.5px solid gold;
+}#e{
+    position: relative;
+    color: gold;
+    text-align: center;
+    font-size: 18px;
+    top: 15px;
+    word-spacing: 1.8px;
+}.tab{
+    position: relative;
+    background-color: inherit;
+    height: 320px;
+}.tab h1{
+    position: relative;
+    text-align: center;
+    font-size: 22.5px;
+    top: 20px;
+    color: gold;
+}#table{
+    position: relative;
+    top: 15px;
+    margin: auto;
+    height: 280px;
+    text-align: center;
+    width: 60%;
+    border: 2px solid gold;
+    color: gold;
+}#table th, td{
+    border: 1px solid gold;
+    border-collapse: collapse;
+}
+#table tr:nth-child(odd){
+    background-color: rgba(108, 105, 105, 0.15);
+}#table tr:nth-child(2){
+    background-color: rgba(108, 105, 105, 0.15);
+}
+#table tr:nth-child(4){
+    background-color: rgba(108, 105, 105, 0.15);
+}
+#table tr:nth-child(1){
+    background-color: rgba(255, 215, 0, 0.15);
+}#f{
+    position: relative;
+    color: gold;
+    text-align: center;
+    font-size: 18px;
+    top: 20px;
+    word-spacing: 1.8px;
+}
