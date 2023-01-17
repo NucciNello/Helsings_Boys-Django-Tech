@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Alumnus, Registered, User
+from .models import Alumnus, Profile
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login as auth_login, logout
 from django.contrib import messages
@@ -69,15 +69,12 @@ def register(request):
         instagram = request.POST['instagram']
         cv = request.POST['cv']
 
-        user = User.objects.create_user(
+        user = Profile.objects.create(
             first_name = first_name,
             last_name = last_name,
             username = username,
             password = password,
             email = email,
-        )
-        Registered.objects.create(
-            user = user,
             second_name = second_name,
             dob = dob,
             mobile = mobile,
@@ -86,6 +83,9 @@ def register(request):
             instagram = instagram,
             cv = cv
         )
+        user.is_active = True
+        user.reg_no = user.create_reg_no()
+        user.set_password(user.password)
         user.save()
         return render(request, 'home.html', {})
     else:
@@ -102,7 +102,7 @@ def login(request):
             auth_login(request, user)
             return render(request, 'home.html')
         else:
-            messages.success(request, ("There was an error! Try again"))
+            messages.error(request, ("There was an error! Try again"))
             return render(request, 'login.html', {})
     else:
         return render(request, 'login.html', {})

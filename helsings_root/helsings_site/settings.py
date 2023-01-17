@@ -39,7 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
 ]
+
+# AUTH_USER_
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -128,7 +131,9 @@ STATICFILES_DIRS = [
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = "home"
 
-# AUTH_USER_MODEL='helsings_school.Registered'
+AUTH_USER_MODEL='helsings_school.Profile'
+
+APPEND_SLASH = False
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

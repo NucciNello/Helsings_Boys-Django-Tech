@@ -1,7 +1,8 @@
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path
 from helsings_school import views
 from django.contrib.auth import views as auth_views
+from helsings_school.apiviews import ProfileList, ProfilesList
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -14,4 +15,8 @@ urlpatterns = [
     path('staff', views.staff, name='staff'),
     path('alumni', views.alumni, name='alumni'),
     path('table', views.table, name='table'),
+
+    path('profiles/', ProfilesList.as_view(), name="profiles_list" ),
+    # path('profile/<pk>',ProfileList.as_view(),)
+    path('profiles/<int:pk>', ProfileList.as_view() ,name="profile_list" ),
 ]
