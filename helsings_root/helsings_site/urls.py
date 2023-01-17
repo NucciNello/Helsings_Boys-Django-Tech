@@ -6,7 +6,7 @@ from helsings_school.apiviews import ProfileList, ProfilesList
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home', views.home, name='home'),
+    path('home/', views.home, name='home'),
     path('aboutus', views.aboutus, name='aboutus'),
     path('contact', views.contact, name='contact'),
     path('login', views.login, name='login'),

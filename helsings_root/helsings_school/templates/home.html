@@ -11,18 +11,18 @@
     </head>
     <body>
       <div id="c2">
-        <button class="button" onclick="parent.location='home'">Home</button>
-        <button class="button" onclick="parent.location='aboutus'">About</button>
-        <button class="button" onclick="parent.location='staff'">Staff</button>
-        <button class="button" onclick="parent.location='contact'">Contacts</button>
+        <button class="button" onclick="parent.location='{% url 'home' %}'">Home</button>
+        <button class="button" onclick="parent.location='{% url 'aboutus' %}'">About</button>
+        <button class="button" onclick="parent.location='{% url 'staff' %}'">Staff</button>
+        <button class="button" onclick="parent.location='{% url 'contact' %}'">Contacts</button>
         {% if user.is_authenticated%}
-        <button class="button" onclick="parent.location='alumni'">Alumni</button>
+        <button class="button" onclick="parent.location='{% url 'alumni' %}'">Alumni</button>
         <button class="button" onclick="parent.location='{% url 'logout' %}'"
           style="text-decoration: None; color: gold; font-size: 15.7px;
           font-family: optima, sans-serif;">Logout</button>
         {% else %}
-        <button class="button" onclick="parent.location='login'">Login</button>
-        <button class="button" onclick="parent.location='register'">Register</button>
+        <button class="button" onclick="parent.location='{% url 'login' %}'">Login</button>
+        <button class="button" onclick="parent.location='{% url 'register' %}'">Register</button>
         {% endif %}
        </div>
           <div id="c1">
